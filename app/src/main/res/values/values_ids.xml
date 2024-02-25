@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="all_category" />
+    <item type="id" name="music_category" />
+    <item type="id" name="sports_category" />
+    <item type="id" name="arts_category" />
+    <item type="id" name="film_category" />
+    <item type="id" name="misc_category" />
+</resources>

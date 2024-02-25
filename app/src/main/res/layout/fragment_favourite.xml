@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FavouritesFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favourite_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Favorites Found"
+        android:textColor="@color/green"
+        android:background="@drawable/background_rounded"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/no_fav_found"
+        android:textSize="20sp"
+        android:visibility="gone"
+
+        android:padding="2dp" />
+
+
+</FrameLayout>

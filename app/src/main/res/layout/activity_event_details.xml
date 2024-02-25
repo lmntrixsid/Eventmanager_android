@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetails"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/off_black"
+            android:paddingTop="2dp"
+
+
+
+
+            >
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/green_back_btn2"
+                android:layout_gravity="center"
+                android:id="@+id/event_back_button"
+                android:backgroundTint="@color/green"
+                android:layout_marginEnd="15dp"/>
+
+            <TextView
+
+                android:id="@+id/eventname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollbars="horizontal"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="Event Finder"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="1dp"
+                android:id="@+id/facebook_button"
+                android:background="@drawable/facebook" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="5dp"
+                android:id="@+id/twitter_button"
+                android:background="@drawable/twitter"
+
+                />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start"
+                android:id="@+id/outlineHeartEventDetails"
+                android:background="@drawable/heart_outline" />
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="start"
+                android:id="@+id/filledHeartEventDetails"
+                android:background="@drawable/heart_filled"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:background="@color/black"
+        app:tabIndicatorColor="@color/green"
+        app:tabIndicatorFullWidth="true"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/green"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

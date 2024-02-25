@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EventListFragment">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progress_bar"
+        android:indeterminateTint="@color/green"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        />
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/green_back_btn"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="5dp"
+        android:text="Back to Search"
+        android:textSize="18sp"
+
+        />
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="No Events Found"
+         android:textColor="@color/green"
+         android:background="@drawable/background_rounded"
+         android:layout_gravity="center"
+         android:textAlignment="center"
+         android:id="@+id/no_events_found"
+         android:textSize="20sp"
+         android:visibility="gone"
+         android:padding="2dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"/>
+
+
+
+</FrameLayout>

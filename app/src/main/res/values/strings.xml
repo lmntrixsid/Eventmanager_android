@@ -1,0 +1,38 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">
+         <font color="#00FF00">EventFinder</font>
+    </string>
+    <string name="TODO" color="green">#00ff00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_keyword">Keyword*</string>
+    <string name="hint_keyword">Enter the Keyword</string>
+    <string name="search">Search</string>
+    <string name="distance_miles">Distance(Miles)*</string>
+    <string name="_10">10</string>
+    <string name="category">Category*</string>
+    <string name="location">Location*</string>
+    <string name="enter_the_location">Enter the Location</string>
+    <string name="clear">Clear</string>
+    <string name="enter_the_keyword">Enter the Keyword</string>
+
+    <string-array name="category_array">
+        <item android:value="">All</item>
+        <item android:value="KZFzniwnSyZfZ7v7nJ">Music</item>
+        <item android:value="KZFzniwnSyZfZ7v7nE">Sports</item>
+        <item android:value="KZFzniwnSyZfZ7v7na">Arts &amp; Theater</item>
+        <item android:value="KZFzniwnSyZfZ7v7nn">Film</item>
+        <item android:value="KZFzniwnSyZfZ7v7n1">Miscellaneous</item>
+    </string-array>
+
+    <string-array name="category_array_values">
+        <item>empty</item>
+        <item>KZFzniwnSyZfZ7v7nJ</item>
+        <item>KZFzniwnSyZfZ7v7nE</item>
+        <item>KZFzniwnSyZfZ7v7na</item>
+        <item>KZFzniwnSyZfZ7v7nn</item>
+        <item>KZFzniwnSyZfZ7v7n1</item>
+    </string-array>
+
+
+</resources>
